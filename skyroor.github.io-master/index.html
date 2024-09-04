@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/load.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+    <div id="draggable" class="terminal">
+        <div id="data" onclick="editable();">
+            <p id="start">
+            </p>
+            <p id="command">
+                <script type="text/javascript">
+                    codetext();
+                </script>
+            </p>
+            <p id="editable" contenteditable="true" onkeyup="giveninput(event)"></p>
+
+            <script type="text/javascript">
+                editable();
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

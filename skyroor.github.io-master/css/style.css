@@ -1,0 +1,129 @@
+html, body {
+    overflow: hidden;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/vamp.png);
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    padding: 0;
+    font-size: 15px;
+    font-family: monospace;
+    display: inline;
+}
+
+#editable {
+    width: auto;
+    height: auto;
+}
+
+#editable:focus {
+    outline-color: transparent;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
+
+#draggable {
+    
+}
+
+.terminal {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    word-break: break-all;
+    border-top: solid 5px #111;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(23, 29, 38, .1);
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .7)
+}
+
+#data {
+    padding-left: 5px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.menu {
+    position: relative;
+    margin-top: -25px;
+    height: 25px;
+}
+
+.circle {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    margin-right: 0px;
+    border-radius: 50%;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0, .6));
+}
+
+.circle>img {
+    opacity: .5;
+    width: 7px;
+}
+
+.command {
+    color: #39ff14;
+}
+
+.r {
+    position: fixed;
+    background-color: rgba(200, 0, 0, 1);
+}
+
+.circle:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.r:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.circle:active {
+    background-color: rgba(200,0,0,.7);
+    border: solid 1px rgba(0,0,0,.8)
+}
+
+::-webkit-scrollbar {
+    overflow: hidden;
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, .5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
