@@ -25,7 +25,8 @@ function showresult(insertdata) {
     document.getElementById("start").innerHTML = topdata + insertdata;
 }
 
-function insertresult(result) {
+function insertresult(resultUnfiltered) {
+    const result = resultUnfiltered.toLowerCase();
     if(result === "") {
         return;
     }
